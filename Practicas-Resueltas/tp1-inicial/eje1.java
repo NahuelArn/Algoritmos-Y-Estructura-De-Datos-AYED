@@ -1,40 +1,40 @@
-package tp1_ejercicios;
-
-public class eje1Main {
-	//A
+public class eje1 {
+	// A
 	public static void recorridoConFor(int a, int b) {
 		System.out.println("recorridoConFor");
 		for (int i = a; i <= b; i++) {
-			System.out.print(i+ " " );
+			System.out.print(i + " ");
 		}
 		System.out.println();
 	}
-	//B
+
+	// B
 	public static void recorridoConWhile(int a, int b) {
 		System.out.println("recorridoConWhile");
-		while(a <= b) {
-			System.out.print(a+ " ");
+		while (a <= b) {
+			System.out.print(a + " ");
 			a++;
 		}
 		System.out.println();
 	}
-	//C
+
+	// C
 	public static void recorridoSinEstructuraDeIteracion(int a, int b) {
-		if(a <= b) {	//con condicional
-			System.out.print(a+" ");
-			recorridoSinEstructuraDeIteracion(a+1,b);	//recursivo
+		if (a <= b) { // con condicional
+			System.out.print(a + " ");
+			recorridoSinEstructuraDeIteracion(a + 1, b); // recursivo
 		}
 		System.out.println();
 	}
-	
+
 	public static void main(String[] args) {
 		System.out.println("sarasa");
-		//a
-		recorridoConFor(1,5);
-		//b
-		recorridoConWhile(1,5);
-		//c
+		// a
+		recorridoConFor(1, 5);
+		// b
+		recorridoConWhile(1, 5);
+		// c
 		System.out.println("recorridoSinEstructuraDeIteracion");
-		recorridoSinEstructuraDeIteracion(1,5);
+		recorridoSinEstructuraDeIteracion(1, 5);
 	}
 }
