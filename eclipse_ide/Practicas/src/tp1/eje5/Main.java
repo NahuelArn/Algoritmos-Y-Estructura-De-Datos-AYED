@@ -18,7 +18,7 @@ public class Main {
 //		System.out
 //				.println("promedio: " + puntoB.getPromedio() + " min: " + puntoB.getMin() + " max: " + puntoB.getMax());
 
-		// C--------------------------------------------------------------
+		// C-----------------------Anda joya---------------------------------------
 		vectorC = vector; // copio el contendio
 		puntoC = new ClaseMagaibera();
 		puntoC.setVector(vectorC);
