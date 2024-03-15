@@ -1,4 +1,4 @@
-package tp1_ejercicios;
+package tp1.eje2;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -20,6 +20,7 @@ public class eje2Main {
 	
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
+		System.out.println("Ingrese el n");
 		ArrayList<Integer> lista = conversor(s.nextInt());
 		System.out.println("sali");
 		for (int i = 0; i < lista.size(); i++) {

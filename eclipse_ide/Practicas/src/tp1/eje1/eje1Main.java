@@ -1,4 +1,4 @@
-package tp1_ejercicios;
+package tp1.eje1;
 
 public class eje1Main {
 	//A
