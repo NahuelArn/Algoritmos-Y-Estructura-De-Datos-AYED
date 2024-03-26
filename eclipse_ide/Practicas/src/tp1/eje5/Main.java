@@ -61,7 +61,9 @@ public class Main {
 	}
 
 	// C
-	public static void opcion_c() {
+	public static void opcion_c() { // SI PODIAS RECIBIR LOS PARAMETROS.. LO ENTENDI MAL // Devuelva lo pedido sin
+									// usar parámetros ni la sentencia "return". sin usar los parametros como
+									// opcionn de retorno pero para comunicar Si podias
 		// Variables locales para almacenar los resultados
 		int max = -9999, min = 9999, suma = 0;
 
