@@ -36,5 +36,6 @@ public class Prueba {
 		System.out.println("despues ");
 		ja.enqueueFirst(3);
 		System.out.println(ja.toString());
+
 	}
 }

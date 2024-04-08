@@ -3,7 +3,7 @@ package tp1.eje8;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Queue<T> extends Sequence { //
+public class Queue<T> extends Sequence { // FifO
 	List<T> data;
 
 	public Queue() {

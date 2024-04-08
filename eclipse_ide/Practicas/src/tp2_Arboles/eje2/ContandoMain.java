@@ -1,6 +1,6 @@
-package tp2_Arboles.eje1;
+package tp2_Arboles.eje2;
 
-public class Analizada {
+public class ContandoMain {
 	public static void main(String[] args) {
 		BinaryTree<Integer> b = new BinaryTree<Integer>();
 		BinaryTree<Integer> b1 = new BinaryTree<Integer>();
@@ -19,6 +19,6 @@ public class Analizada {
 		b1.addLeftChild(b3);
 		b1.addRightChild(b5);
 		b.inOrder();
-		System.out.println("cantidad de hojas: " + b.contarHojas());// puntero a la raiz del arbol
+		System.out.println("cantidad de hojas: " + b.countSheets());// puntero a la raiz del arbol
 	}
 }

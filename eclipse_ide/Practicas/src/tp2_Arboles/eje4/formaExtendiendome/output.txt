@@ -1,0 +1,76 @@
+izq: 0 derech: 0
+suma :07
+mayor :0
+dato actual: 7
+------------------------------------------
+izq: 0 derech: 0
+suma :08
+mayor :0
+dato actual: 8
+------------------------------------------
+izq: 7 derech: 8
+suma :85  = 13
+mayor :8
+dato actual: 5
+------------------------------------------
+izq: 0 derech: 0
+suma :05
+mayor :0
+dato actual: 5
+------------------------------------------
+izq: 0 derech: 0
+suma :06
+mayor :0
+dato actual: 6
+------------------------------------------
+izq: 5 derech: 6
+suma :64     = 10
+mayor :6
+dato actual: 4
+------------------------------------------
+izq: 13 derech: 10
+suma :132      = 15
+mayor :13
+dato actual: 2
+------------------------------------------
+izq: 0 derech: 0
+suma :012
+mayor :0
+dato actual: 12
+------------------------------------------
+izq: 0 derech: 0
+suma :08
+mayor :0
+dato actual: 8
+------------------------------------------
+izq: 12 derech: 8
+suma :129    = 21
+mayor :12
+dato actual: 9
+------------------------------------------
+izq: 0 derech: 0
+suma :02
+mayor :0
+dato actual: 2
+------------------------------------------
+izq: 0 derech: 0
+suma :01
+mayor :0
+dato actual: 1
+------------------------------------------
+izq: 2 derech: 1
+suma :28    = 10
+mayor :2
+dato actual: 8
+------------------------------------------
+izq: 21 derech: 10
+suma :213      = 24
+mayor :21
+dato actual: 3
+------------------------------------------
+izq: 15 derech: 24
+suma :2410
+mayor :24
+dato actual: 10
+------------------------------------------
+34
