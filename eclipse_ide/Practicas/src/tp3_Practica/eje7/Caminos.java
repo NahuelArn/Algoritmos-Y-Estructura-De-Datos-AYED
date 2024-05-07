@@ -16,7 +16,9 @@ public class Caminos {
 	 * if actual > max max = caminoActual y corto ejecucion
 	 */
 	private void helperPrimerCaminoLargo(GeneralTree<Integer> a, List<Integer> arbolActual, List<Integer> arbolMax) {
-		if (a.isLeaf() && arbolMax.size() <= 0) {
+		arbolActual.add(a.getData());
+		if (a.isLeaf()) {
+			System.out.println("abc");
 			if (arbolActual.size() > arbolMax.size()) {
 				arbolMax.clear();
 				arbolMax.addAll(arbolActual);
@@ -25,9 +27,8 @@ public class Caminos {
 
 		} else {
 			List<GeneralTree<Integer>> childActual = a.getChildren();
-			arbolActual.add(a.getData());
+//			arbolActual.add(a.getData());
 			for (GeneralTree<Integer> i : childActual) {
-//				arbolActual.add(a.getData());
 				helperPrimerCaminoLargo(i, arbolActual, arbolMax);
 				arbolActual.remove(arbolActual.size() - 1);
 			}
