@@ -27,26 +27,35 @@ Output
 Imprima "Yes" si el árbol es un abeto y "No" de lo contrario*/
 
 public class Navidad {
+	
 	private GeneralTree<Integer> arbol;
 	
+	public Navidad(GeneralTree<Integer> arbol) {
+		this.arbol = arbol;
+	}
+	
 	private boolean helperAbeto(GeneralTree<Integer> a) {
-		int cantHojas = 0;
-		List<GeneralTree<Integer>> childActual = a.getChildren();
-		for (GeneralTree<Integer> i: childActual) {
-			if(a.isLeaf()) {
-				cantHojas++;
-			}else {
-				if( !helperAbeto(i)){
-					return false;
-				}
-			}
-		}
-		return cantHojas >= 3;
+	    int cantHojas = 0;
+	    List<GeneralTree<Integer>> childActual = a.getChildren();
+	    int i = 0;
+	    boolean cumple = true; // Inicializamos cumple en true
+	    while (i < childActual.size() && cumple) {
+	        GeneralTree<Integer> child = childActual.get(i);
+	        if (child.isLeaf()) {
+	            cantHojas++;
+	        } else {
+	            if (!helperAbeto(child)) {
+	                cumple = false; // Si un subárbol no cumple, cambiamos cumple a false
+	            }
+	        }
+	        i++; // Incrementamos el índice en cada iteración
+	    }
+	    return cumple && cantHojas >= 3; // Retornamos true solo si cumple y la cantidad de hojas es al menos 3
 	}
 	
 	public String esAbetoNavidenio() {
 		String estado = "No";
-		if(!arbol.isEmpty() && (arbol != null)) {
+		if((arbol != null) && (!arbol.isEmpty())) {
 			if(helperAbeto(arbol)) {
 				estado = "Si";
 			}
